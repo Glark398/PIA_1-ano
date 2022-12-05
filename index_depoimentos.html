@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content=" Papo Reto Sites ">
+    <meta name="keywords" content=" desenvolvedor, front-end, css, html, desing">
+    <meta name="description" content="To ">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style_index.css">
+    <link rel="stylesheet" href="CSS/style_depoimentos.css">
+    <link rel="stylesheet" href="CSS/responsividade.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title> TO BE FREE</title>
+</head>
+<body>
+
+    <nav class="menu">
+        <div class="logo">
+            <div class="button_en">
+                <a href="English/index_depoimentos_en.html">
+                    <img src="IMG/button_en.png">
+                </a>
+            </div>
+            <h1 style="font-weight:lighter">TBF</h1>
+            <img src="IMG/Logo_sem_fundo.png">
+        </div>
+
+        <div class="inside-menu">
+            <a href="index.html">Início</a>
+            <a href="index.html#Pesquisa">Pesquisa</a>
+            <a href="index.html#Sobre">Sobre</a>
+        </div>
+    </nav>
+
+    
+    <div id="depoimentos">
+        <br><br><br><br>
+        <p class="dep">DEPOIMENTOS</p>
+        
+        <br><br><br><br>
+        <div class="circles">
+    </div>
+
+        <div class="slides">
+            
+            <div id="atual" class="image">
+                <img src="IMG/texto_ticiana.png">
+            </div>
+            <div class="image">
+                <img src="IMG/texto_janice.png">
+            </div>
+            <div class="image">
+                <img src="IMG/texto_mauro.png">
+            </div>
+            <div class="image">
+                <img src="IMG/texto_ibsen.png">
+            </div>
+            <div class="image">
+                <img src="IMG/texto_renato_filo.png">
+            </div>
+            <div class="image">
+                <img src="IMG/texto_renato_hist.png">
+            </div>        
+        </div>
+
+        <img src="IMG/depoimentos_silhueta.png" class="silhueta">
+    </div>
+
+</body>
+<script>
+    var circles = document.querySelector('.circles')
+    var quant = document.querySelectorAll('.slides .image')
+    var atual = 0
+    var imagem = document.getElementById('atual')
+    var frente = document.getElementById('frente')
+    var voltar = document.getElementById('voltar')
+
+    for(let i=0; i < quant.length; i++){
+        var div = document.createElement('div')
+        div.id = i
+        circles.appendChild(div)
+    }
+    document.getElementById('0').classList.add('imgAtual')
+
+    var pos = document.querySelectorAll('.circles div')
+
+    for(let i=0; i < pos.length; i++){
+        pos[i].addEventListener('click', function(){
+            atual = pos[i].id
+            slide()
+        })
+    }
+
+    voltar.addEventListener('click', ()=>{
+        atual--
+        slide()
+    })
+    frente.addEventListener('click', ()=>{
+        atual++
+        slide()
+    })
+
+    function slide(){
+        if(atual >= quant.length){
+            atual = 0
+        }
+        else if(atual < 0){
+            atual = quant.length-1
+        }
+        document.querySelector('.imgAtual').classList.remove('.imgAtual')
+        imagem.style.marginLeft = -26*atual + '%'
+        document.getElementById(atual).classList.add('imgAtual')
+    }
+
+    slide()
+</script>
+</html>

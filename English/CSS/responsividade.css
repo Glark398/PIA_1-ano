@@ -1,0 +1,123 @@
+@media screen and (max-width: 1000px){
+    .background{
+        height: 50vh;
+    }
+    
+    .inside-menu{
+        padding-right: 0;
+        margin-top: -2vh;
+    }
+    #Pesquisa div{
+        flex-direction: column;
+    }
+
+    .Sobre div{
+        flex-direction: column;
+    }
+
+    .rodape{
+        height: 220vh;
+    }
+
+    .contatos{
+        flex-direction: column;
+    }
+    .enviar{
+        margin-left: -30vw;
+    }
+    iframe{
+        width: 75vw;
+        height: 65vw;
+    }
+    .map p{
+        width: 70vw;
+        font-size: 5vw;
+    }
+    .menu{
+        height: 14vh;
+        flex-direction: column;
+    }
+
+    .menu div{
+        font-size: 2.6vh;
+    }
+    .menu div img{
+        width: 7vh;
+    }
+    .menu a{
+        margin-bottom: 3vh;
+    }
+    #Pesquisa{
+        font-size: 2.5vh;
+    }
+
+    #Pesquisa div div h1{
+        font-size: 4vh;
+    }
+    #Pesquisa div div p{
+        font-size: 3.5vh;
+        width: 70vw;
+    }
+
+    .povo{
+        width: 70vw;
+    }
+
+    .comp{
+        width: 83vw;
+    }
+
+    .alte{
+        width: 70vw;
+    }
+
+    .diversidade{
+        font-size: 2.4vh;
+    }
+    .diversidade p{
+        font-size: 3.2vh;
+        width: 70vw;
+    }
+    .diversidade img{
+        width: 60vh;
+    }
+
+    .Sobre{
+        font-size: 2.7vh;
+    }
+
+    .Sobre div div h1{
+        font-size: 4.5vh;
+    }
+    
+    .Sobre div div p{
+        width: 73vw;
+        font-size: 3.9vh;
+    }
+
+    .Sobre div div img{
+        width: 28vh;
+    }
+
+
+
+    .dep{
+        font-size: 7vh;
+    }
+    .image img{
+        width: 75vh;
+        height: 43vh;
+        margin-left: 0;
+        margin-top: -4vh;
+    }
+
+    .slides{
+        width: 286vh;
+    }
+
+    .silhueta{
+        width: 50vh;
+        margin-left: 10vh;
+        margin-top: -10vh;
+    }
+}
