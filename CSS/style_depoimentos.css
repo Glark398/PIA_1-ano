@@ -3,19 +3,19 @@ body{
 }
 
 .dep{
-    margin-left: 50vw;
     font-size: 5vw;
     color: #fc9541;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin-top: 5vh;
     font-family: "shrikhand";
 }
 
 .slides{
-    width: 288vw;
+    width: 309vw;
     display: flex;
+    margin-top: 20px;
 }
+
 .image img{
     width: 106vh;
     height: 58vh;
@@ -41,7 +41,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -12vh;
+    margin-top: -7vh;
 }
 
 .circles div{

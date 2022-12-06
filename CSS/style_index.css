@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     overflow-x: hidden;
     height: 100vw;
@@ -14,6 +19,7 @@ body{
     align-items: center;
     flex-direction: row;
     z-index: 1;
+    top: 0;
 }
 
 .menu div{
@@ -27,11 +33,6 @@ body{
     font-size: 1.6vw;
 }
 
-.button_en a img{
-    height: 9.5vh;
-    margin-top: 15%;
-}
-
 .logo{
     margin-right: 66vh;
 }
@@ -42,6 +43,7 @@ body{
 
 .menu div img{
     width: 7vw;
+    height: auto;
 }
 
 a{
@@ -61,6 +63,8 @@ a:hover{
 .background{
     background-image: url(../IMG/back2.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 70vw;
 }
 
@@ -70,17 +74,18 @@ a:hover{
     font-size: 1.1vw;
 }
 
-#Pesquisa div{
+.topicos{
+    margin: 60px 0;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-direction: row;
 }
 
-#Pesquisa div div{
+.coluna{
+    height: 100%;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
 #Pesquisa div div h1{
