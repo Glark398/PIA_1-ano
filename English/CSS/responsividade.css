@@ -1,6 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
 @media screen and (max-width: 1000px){
+    .material-symbols-outlined{
+        font-size: 60px !important;
+    }
     .background{
         height: 50vh;
+        margin-top: 5vh;
     }
     
     .inside-menu{
@@ -11,8 +18,12 @@
         flex-direction: column;
     }
 
-    .Sobre div{
+    .Sobre > div{
         flex-direction: column;
+        gap: 60px;
+    }
+    .Sobre > div > div{
+        flex-direction: column-reverse;
     }
 
     .rodape{
@@ -37,18 +48,21 @@
         height: 14vh;
         flex-direction: column;
     }
-
+    .logo{
+        margin: 0;
+    }
     .menu div{
-        font-size: 2.6vh;
+        font-size: 16px;
+        gap: 30px;
     }
     .menu div img{
         width: 7vh;
-    }
-    .menu a{
-        margin-bottom: 3vh;
+        height: auto;
     }
     #Pesquisa{
         font-size: 2.5vh;
+        margin-top: 0;
+
     }
 
     #Pesquisa div div h1{
@@ -103,21 +117,24 @@
 
     .dep{
         font-size: 7vh;
+        margin-top: 10vh;
     }
     .image img{
-        width: 75vh;
-        height: 43vh;
+        width: 105vw;
+        height: auto;
         margin-left: 0;
         margin-top: -4vh;
     }
-
+    .circles{
+        margin-top: -7vh;
+    }
     .slides{
-        width: 286vh;
+        width: 406vw;
     }
 
     .silhueta{
         width: 50vh;
-        margin-left: 10vh;
-        margin-top: -10vh;
+        margin-left: 5vh;
+        margin-top: -6vh;
     }
 }
